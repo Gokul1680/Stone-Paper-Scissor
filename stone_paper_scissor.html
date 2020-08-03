@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissor</title>
+    <link rel="stylesheet" href="stone_paper_scissor.css">
+</head>
+<body>
+    <div class="head">
+    <p>Stone Paper Scissor Game</p>
+    <p> You Vs Computer<br> 6 points to win!</p>
+    </div>
+    <div class="sbcontainer">
+        <p id="sb">Score Board</p>
+            <div class="scoreboard">
+            <p id="user" class="label">You</p>
+            <p id="comp" class="label">Comp</p>
+            <p class="score"> <span id="user_score">0</span>:<span id="comp_score">0</span></p>
+            </div>
+    </div>
+    <div id="container">
+    <div class="buttons">
+        <button id="stone" class="btn" onclick="myfunc('stone')" value="stone">Stone</button>
+        <button id="paper" class="btn" onclick="myfunc('paper')" value="paper">Paper</button>
+        <button id="scissor" class="btn" onclick="myfunc('scissor')" value="scissor">Scissor</button>
+        <br>
+        <button id="reset" class="btn"
+        onclick="reset()">Reset</button>
+    </div>
+
+    <div class="analysis" id="analysis">
+        <p>user:<span id="usermove"></span><br><br>comp:<span id="compmove"></span></p>
+    </div>
+</div>
+    <div id="message" class="message">
+        <h1 id="msg"></h1>
+    </div>
+   
+    
+    <script src="stone_paper_scissor.js"></script>
+    
+</body>
+</html>
